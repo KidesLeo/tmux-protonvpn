@@ -2,6 +2,9 @@
 
 ProtonVPN status for your tmux status bar. Works with both the ProtonVPN CLI and GUI app (via NetworkManager).
 
+<img width="404" height="76" alt="VPN OFF" src="https://github.com/user-attachments/assets/707af345-c5b4-4ba2-b6c7-900043cf4bf5" />
+<img width="637" height="62" alt="VPN Server Location" src="https://github.com/user-attachments/assets/89cdab57-1bbe-4388-b651-419a027c0640" />
+
 ## Install
 
 ### Via TPM
@@ -9,7 +12,7 @@ ProtonVPN status for your tmux status bar. Works with both the ProtonVPN CLI and
 Add to `~/.tmux.conf`:
 
 ```tmux
-set -g @plugin 'your-github-username/tmux-protonvpn'
+set -g @plugin 'KidesLeo/tmux-protonvpn'
 ```
 
 Then press `prefix + I` to install.
@@ -17,7 +20,7 @@ Then press `prefix + I` to install.
 ### Manual
 
 ```bash
-git clone https://github.com/your-github-username/tmux-protonvpn ~/.tmux/plugins/tmux-protonvpn
+git clone https://github.com/KidesLeo/tmux-protonvpn ~/.tmux/plugins/tmux-protonvpn
 ~/.tmux/plugins/tmux-protonvpn/tmux-protonvpn.tmux
 ```
 
