@@ -29,15 +29,9 @@ Add `#{protonvpn_status}` to your `status-right` or `status-left`:
 set -g status-right '#{protonvpn_status} | %H:%M'
 ```
 
-For theme plugins that use their own prepend sections (e.g. rose-pine/tmux), use the script path directly:
-
-```tmux
-set -g @rose_pine_status_right_prepend_section '#(~/.tmux/plugins/tmux-protonvpn/scripts/vpn_status.sh)'
-```
-
 ## Configuration
 
-All options are optional — defaults are shown below.
+Defaults are shown below.
 
 ```tmux
 set -g @protonvpn_connected_icon    "🔐"   # icon when connected
@@ -47,8 +41,6 @@ set -g @protonvpn_show_server       "true"     # show server name when connected
 set -g @protonvpn_show_protocol     "false"    # show protocol (WireGuard / OpenVPN)
 set -g @protonvpn_show_load         "false"    # show server load % (CLI only)
 ```
-
-**Note:** If you manually `set` an option to test it and then comment it out, tmux keeps the value in memory until the session restarts. To clear a stale option: `tmux set-option -gu @protonvpn_show_server`
 
 ## Requirements
 
