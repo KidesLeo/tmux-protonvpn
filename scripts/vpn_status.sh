@@ -13,7 +13,7 @@ show_server=$(get_opt       "@protonvpn_show_server"       "true")
 show_protocol=$(get_opt     "@protonvpn_show_protocol"     "false")
 show_load=$(get_opt         "@protonvpn_show_load"         "false")
 
-output=$(protonvpn status 2>/dev/null)
+output=$(timeout 3 protonvpn status 2>/dev/null)
 vpn_status=$(echo "$output" | grep "^Status:" | awk '{print $2}')
 
 if [ "$vpn_status" = "Connected" ]; then
